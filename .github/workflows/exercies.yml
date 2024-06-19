@@ -1,0 +1,26 @@
+name: udemy_exercise
+on: push
+jobs:
+    lint-deploy-test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Lint Action
+              uses: npm run lint
+            - name: Test Action
+              run: npm run test
+            - name: Build
+              run: npm run build
+              
+
+            
+
+        
+
+           
+
+    
+
+    
+
+
+
